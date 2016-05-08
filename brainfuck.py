@@ -104,7 +104,8 @@ def main():
         filename = sys.argv[1]
         f = open(filename, "r")
     else:
-        f = sys.stdin
+        print("Usage: {} [file]".format(__file__))
+        sys.exit(1)
     program = f.read()
     bfi = BrainfuckInterpreter()
     bfi.interpret(program)

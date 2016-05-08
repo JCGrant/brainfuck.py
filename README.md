@@ -7,10 +7,6 @@ Pass a brainfuck program into it as an argument:
 
     ./brainfuck.py [file]
 
-It can read from stdin:
-
-    echo [brainfuck-string] | ./brainfuck
-
 Or you can use it as a module:
 
     from brainfuck import BrainfuckInterpreter
